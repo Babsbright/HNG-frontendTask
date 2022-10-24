@@ -1,0 +1,54 @@
+body {
+  color: #101828;
+  text-align: center;
+  background: #f4f5f7;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.profile__img {
+  padding-top: 50px;
+}
+
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  text-align: center;
+
+}
+
+.btns button {
+  width: 80%;
+  height: 50px;
+  margin-top: 20px;
+  background: #eaecf0;
+  border: none;
+  border-radius: 5px;
+}
+
+button a {
+  text-decoration: none;
+  color: #101828;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+
+.icons img {
+  margin: 30px 20px;
+}
+
+footer {
+  margin: 30px;
+}
+
+
+@media screen and (min-width:658px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
