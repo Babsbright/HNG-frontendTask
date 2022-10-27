@@ -5,10 +5,10 @@ body {
   text-align: center;
 }
 
+/* PROFILE */
 
 .profile img {
   padding-top: 20px;
-
 }
 
 .profile {
@@ -19,6 +19,16 @@ body {
   font-size: 18px;
 }
 
+.vector {
+  position: relative;
+  left: 42%;
+  top: 30px;
+}
+
+.vector:hover {
+  width: 45px;
+}
+
 .vector2 {
   display: none;
 }
@@ -27,19 +37,14 @@ body {
   display: none;
 }
 
+/* BUTTONS */
+
 .btns {
   display: flex;
   flex-direction: column;
   align-items: center !important;
   text-align: center;
 
-}
-
-.vector {
-  /* float: right; */
-  position: relative;
-  left: 42%;
-  top: 30px;
 }
 
 .btns button {
@@ -63,6 +68,7 @@ button a {
   margin: 10px;
 }
 
+/* ICONS */
 
 .icons img {
   margin: 30px 20px;
@@ -72,6 +78,8 @@ button a {
 .icons img:hover {
   width: 25px;
 }
+
+/* FOOTER */
 
 footer {
   margin: 40px 0px 10px 30px;
@@ -101,13 +109,13 @@ footer p {
 
 @media screen and (min-width:678px) {
 
+  /* PROFILE */
   .profile {
     padding-top: 30px;
   }
 
   .profile h2 {
     font-size: 20px;
-
   }
 
   .vector {
@@ -122,6 +130,12 @@ footer p {
     width: 35px;
   }
 
+  .vector2:hover {
+    width: 38px;
+  }
+
+  /* BUTTONS */
+
   button a {
     font-size: 18px;
   }
@@ -134,16 +148,20 @@ footer p {
     margin-bottom: 20px;
   }
 
+  /* ICONS */
+  .icons img {
+    margin-bottom: 40px;
+  }
+
+
+  /* FOOTER */
+
   .footer {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-around;
     align-items: center;
-  }
-
-  .icons img {
-    margin-bottom: 40px;
   }
 
   .zuri img {
@@ -156,10 +174,8 @@ footer p {
     height: 30px;
   }
 
-
-
   footer p {
-
     font-size: 16px;
   }
+
 }

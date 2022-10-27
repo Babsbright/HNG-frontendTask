@@ -15,7 +15,7 @@ function App() {
     <div className="App">
 
       {/* PROFILE */}
-      
+
       <img className='vector' src={vector} alt='mobile menu' />
       <img className='vector2' src={vector2} alt='desktop share' />
 
@@ -43,8 +43,7 @@ function App() {
 
       <div className='icons'>
         <img src={slack} alt='slack logo' />
-        <img src={github} alt='github logo' />
-
+        <a href='https://github.com/Babsbright/HNG-frontendTask'><img src={github} alt='github logo' /></a>
       </div>
 
 
