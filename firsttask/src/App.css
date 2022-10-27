@@ -2,29 +2,32 @@ body {
   color: #101828;
   background: #f4f5f7;
   font-family: 'Inter', sans-serif;
-text-align: center;
+  text-align: center;
 }
 
 
 .profile__img {
   padding-top: 20px;
-  
+
 }
-.profile{
+
+.profile {
   text-align: center;
 }
-.slack{
+
+.slack {
   display: none;
 }
 
 .btns {
   display: flex;
   flex-direction: column;
-  align-items: center!important;
+  align-items: center !important;
   text-align: center;
 
 }
-.vector{
+
+.vector {
   /* float: right; */
   position: relative;
   left: 42%;
@@ -39,7 +42,8 @@ text-align: center;
   border: none;
   border-radius: 7px;
 }
-.btns button:hover{
+
+.btns button:hover {
   background: rgb(204, 202, 202);
 }
 
@@ -56,36 +60,61 @@ button a {
   margin: 30px 20px;
   text-align: center;
 }
-.icons img:hover{
 
-}
+.icons img:hover {}
 
 footer {
   margin: 40px 0px 30px 30px;
   text-align: left;
 }
-footer img{
+
+footer img {
   width: 120px;
 }
 
-hr{
+hr {
   margin-bottom: 30px;
+  border: 3px solid rgb(223, 222, 222);
 }
 
 
 @media screen and (min-width:658px) {
 
- .footer {
+  .profile{
+    padding-top: 30px;
+  }
+
+  footer {
+    margin: 40px 0px 20px 30px;
+  }
+
+  hr {
+    margin-bottom: 20px;
+  }
+
+  .footer {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-around;
-  }
-  .footer img{
-    width: 150px;
+    align-items: center;
   }
 
-  .vector{
+  .icons img {
+    margin-bottom: 40px;
+  }
+
+  .zuri img {
+    width: 130px;
+    height: 20px;
+  }
+
+  .ingressive img {
+    width: 130px;
+    height: 30px;
+  }
+
+  .vector {
     display: none;
   }
 }

@@ -12,7 +12,7 @@ import vector from './Image/taskimg (2).png'
 function App() {
   return (
     <div className="App">
-            <img className='vector' src = {vector} />
+      <img className='vector' src={vector} />
 
       <div className='profile'>
 
@@ -40,9 +40,9 @@ function App() {
       <footer>
         <hr />
         <div className='footer'>
-          <img src={img2} alt='zuri logo' />
+          <div className='zuri'> <img src={img2} alt='zuri logo' /></div>
           <p>HNG Internship 9 Frontend Task</p>
-          <img src={img3} alt='ingressive logo' />
+          <div className='ingressive'><img src={img3} alt='ingressive logo' /></div>
         </div>
       </footer>
     </div>
