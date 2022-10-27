@@ -6,13 +6,21 @@ body {
 }
 
 
-.profile__img {
+.profile img {
   padding-top: 20px;
 
 }
 
 .profile {
   text-align: center;
+}
+
+.profile h2 {
+  font-size: 18px;
+}
+
+.vector2 {
+  display: none;
 }
 
 .slack {
@@ -36,7 +44,7 @@ body {
 
 .btns button {
   width: 80%;
-  padding: 22px;
+  padding: 24px 32px 24px 32px;
   margin-top: 20px;
   background: #eaecf0;
   border: none;
@@ -50,8 +58,8 @@ body {
 button a {
   text-decoration: none;
   color: #101828;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   margin: 10px;
 }
 
@@ -61,27 +69,61 @@ button a {
   text-align: center;
 }
 
-.icons img:hover {}
+.icons img:hover {
+  width: 25px;
+}
 
 footer {
-  margin: 40px 0px 30px 30px;
+  margin: 40px 0px 10px 30px;
   text-align: left;
 }
 
+.footer {
+  padding: 20px 30px;
+}
+
+
 footer img {
-  width: 120px;
-}
-
-hr {
-  margin-bottom: 30px;
-  border: 3px solid rgb(223, 222, 222);
+  width: 110px;
 }
 
 
-@media screen and (min-width:658px) {
+footer p {
+  color: #667085;
+  font-weight: 400;
+  font-size: 14px;
+}
 
-  .profile{
+.ingressive {
+  margin-top: 30px;
+}
+
+
+@media screen and (min-width:678px) {
+
+  .profile {
     padding-top: 30px;
+  }
+
+  .profile h2 {
+    font-size: 20px;
+
+  }
+
+  .vector {
+    display: none;
+  }
+
+  .vector2 {
+    display: block;
+    position: relative;
+    left: 73%;
+    top: 80px;
+    width: 35px;
+  }
+
+  button a {
+    font-size: 18px;
   }
 
   footer {
@@ -114,7 +156,10 @@ hr {
     height: 30px;
   }
 
-  .vector {
-    display: none;
+
+
+  footer p {
+
+    font-size: 16px;
   }
 }
