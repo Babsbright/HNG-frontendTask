@@ -1,18 +1,22 @@
 
 import './App.css';
 
-                
+
 import img1 from './Image/taskimg (5).png'
 import img2 from './Image/taskimg (3).png'
 import img3 from './Image/taskimg (4).png'
 import slack from './Image/slack.png'
 import github from './Image/Icon.png'
+import vector from './Image/taskimg (2).png'
 
 function App() {
   return (
     <div className="App">
+            <img className='vector' src = {vector} />
+
       <div className='profile'>
-        <img className='profile__img' src={img1}  />
+
+        <img className='profile__img' src={img1} alt='profile' />
         <h2 className='twitter'>Annette Black</h2>
         <h2 className='slack'>slack</h2>
       </div>
@@ -27,16 +31,19 @@ function App() {
 
       </div>
       <div className='icons'>
-        <img src = {slack} />
-        <img src = {github} />
-       
+        <img src={slack} alt='slack logo' />
+        <img src={github} alt='github logo' />
+
       </div>
-   
-   
+
+
       <footer>
-        <img src = {img2} />
-        <p>HNG Internship 9 Frontend Task</p>
-        <img src ={img3} />
+        <hr />
+        <div className='footer'>
+          <img src={img2} alt='zuri logo' />
+          <p>HNG Internship 9 Frontend Task</p>
+          <img src={img3} alt='ingressive logo' />
+        </div>
       </footer>
     </div>
   );

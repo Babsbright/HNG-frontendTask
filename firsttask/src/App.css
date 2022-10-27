@@ -1,31 +1,46 @@
 body {
   color: #101828;
-  text-align: center;
   background: #f4f5f7;
   font-family: 'Inter', sans-serif;
-
+text-align: center;
 }
+
 
 .profile__img {
-  padding-top: 50px;
+  padding-top: 20px;
+  
 }
-
+.profile{
+  text-align: center;
+}
+.slack{
+  display: none;
+}
 
 .btns {
   display: flex;
   flex-direction: column;
-  align-items: center !important;
+  align-items: center!important;
   text-align: center;
 
+}
+.vector{
+  /* float: right; */
+  position: relative;
+  left: 42%;
+  top: 30px;
 }
 
 .btns button {
   width: 80%;
-  height: 50px;
+  padding: 22px;
   margin-top: 20px;
   background: #eaecf0;
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
+}
+.btns button:hover{
+  background: rgb(204, 202, 202);
 }
 
 button a {
@@ -39,16 +54,38 @@ button a {
 
 .icons img {
   margin: 30px 20px;
+  text-align: center;
+}
+.icons img:hover{
+
 }
 
 footer {
-  margin: 30px;
+  margin: 40px 0px 30px 30px;
+  text-align: left;
+}
+footer img{
+  width: 120px;
+}
+
+hr{
+  margin-bottom: 30px;
 }
 
 
 @media screen and (min-width:658px) {
-  footer {
+
+ .footer {
     display: flex;
+    flex-direction: row;
+    text-align: center;
     justify-content: space-around;
+  }
+  .footer img{
+    width: 150px;
+  }
+
+  .vector{
+    display: none;
   }
 }
