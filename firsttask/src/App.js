@@ -9,6 +9,7 @@ import slack from './Image/slack.png'
 import github from './Image/Icon.png'
 import vector from './Image/taskimg (2).png'
 import vector2 from './Image/desktop_share.png'
+import profile from './Image/tolu.png'
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
 
       <div className='profile'>
 
+        <img id='profile__img' src={profile} alt='profile' />
         <img id='profile__img' src={img1} alt='profile' />
-        <h2 id='twitter'>Annette Black</h2>
+        <h2 id='twitter'>Tolulope Bright</h2>
         <h2 id='slack' className='slack'>Tolulope Bright</h2>
       </div>
 
