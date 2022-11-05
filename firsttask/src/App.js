@@ -1,7 +1,7 @@
 
 import './App.css';
-import Profile from './Profile';
-import Contact from './Contact';
+import Profile from './components/Profile';
+import Contact from './components/Contact';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {

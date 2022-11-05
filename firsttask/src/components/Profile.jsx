@@ -1,19 +1,16 @@
 import React from 'react'
 
-
-import img2 from './Image/taskimg (3).png'
-import img3 from './Image/taskimg (4).png'
-import slack from './Image/slack.png'
-import github from './Image/Icon.png'
-import vector from './Image/taskimg (2).png'
-import vector2 from './Image/desktop_share.png'
-import profile from './Image/tolu.png'
+import slack from '../Image/slack.png'
+import github from '../Image/Icon.png'
+import vector from '../Image/taskimg (2).png'
+import vector2 from '../Image/desktop_share.png'
+import profile from '../Image/tolu.png'
 import {Link} from 'react-router-dom'
 import Footer from './Footer'
 
 function Profile() {
     return (
-        <div>
+        <div className='profile-body'>
             {/* PROFILE */}
 
       <img className='vector' src={vector} alt='mobile menu' />
@@ -35,10 +32,14 @@ function Profile() {
         <button id='book__python'><a href='https://books.zuri.team/python-for-beginners?ref_id=<tolulopeBright>'>Python Books</a></button>
         <button id='pitch'><a href='https://background.zuri.team'>Background check for Coders</a></button>
         <button id='book__design'><a href='https://books.zuri.team/design-rules'>Design Books</a></button>
-       <Link to ='/contact'>
-       <button id='book__design'>Contact Me</button>
+     
+        <button id='book__design'>
+        <Link className='link' to ='/contact'>
+       Contact Me
 
        </Link>
+        </button>
+     
       </div>
 
 

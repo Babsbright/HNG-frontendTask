@@ -1,7 +1,7 @@
 import React from 'react'
 
-import img2 from './Image/taskimg (3).png'
-import img3 from './Image/taskimg (4).png'
+import img2 from '../Image/taskimg (3).png'
+import img3 from '../Image/taskimg (4).png'
 
 function Footer() {
     return (
