@@ -10,7 +10,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          
+
           <Route path='/' element={<Profile />} />
           <Route path="contact" element={<Contact />} />
 

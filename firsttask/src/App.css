@@ -1,21 +1,21 @@
 body {
   color: #101828;
- 
+
   font-family: 'Inter', sans-serif;
   text-align: center;
 }
 
 /* PROFILE */
 
-.profile-body{
+.profile-body {
   background: #f4f5f7;
 }
 
 .profile img {
   padding-top: 20px;
-  width:200px;
-  height:200px;
-  border-radius:50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .profile {

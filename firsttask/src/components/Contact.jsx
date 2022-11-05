@@ -8,8 +8,8 @@ function Contact() {
 
             <div className='contact'>
                 <div className="text">
-                <h1 style = {{textAlign:'left', alignItems: 'flex-start'}}>Contact Me</h1>
-                <p style = {{textAlign:'left', alignItems: 'flex-start'}}>Hi there, contact me to ask me about anything you have in mind.</p>
+                    <h1 style={{ textAlign: 'left', alignItems: 'flex-start' }}>Contact Me</h1>
+                    <p style={{ textAlign: 'left', alignItems: 'flex-start' }}>Hi there, contact me to ask me about anything you have in mind.</p>
 
                 </div>
                 <form>
@@ -19,6 +19,7 @@ function Contact() {
                             <br />
 
                             <input
+                                id='first_name'
                                 type="text"
                                 placeholder='Enter your first name'
                                 required
@@ -31,6 +32,7 @@ function Contact() {
 
                             <input
                                 type="text"
+                                id='last_name'
                                 placeholder='Enter your last name'
                                 className='second'
                                 required
@@ -46,7 +48,8 @@ function Contact() {
 
                     <input
                         type="text"
-                        className ='email'
+                        id='email'
+                        className='email'
                         placeholder='youremail@email.com'
                         required
                     />
@@ -60,7 +63,7 @@ function Contact() {
                     <textarea
                         placeholder="Send me a message and I'll reply you as soon as possible..."
                         name="message"
-                        id=""
+                        id="message"
                         cols="30"
                         rows="10"
                         required>
@@ -73,7 +76,7 @@ function Contact() {
 
                     </div>
                     <br />
-                    <button>Send message</button>
+                    <button id='btn__submit'>Send message</button>
                 </form>
             </div>
 

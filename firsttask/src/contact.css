@@ -87,7 +87,7 @@ label {
 
     .text {
         text-align: left !important;
-        margin-right:2%;
+        margin-right: 2%;
     }
 
 
@@ -97,7 +97,7 @@ label {
     }
 
     .name div {
-        width: 50%;
+        width: 48%;
     }
 
     .second {
@@ -112,11 +112,12 @@ label {
     .check {
         align-items: center;
     }
+
     .contact .checkbox {
         width: 25px;
         height: 25px;
-        border-radius: 8px!important;
-        
+        border-radius: 8px !important;
+
     }
 
     .contact button {
