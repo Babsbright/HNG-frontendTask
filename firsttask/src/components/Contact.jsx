@@ -1,15 +1,37 @@
 import React from 'react'
 import Footer from './Footer'
 import '../contact.css'
+import { useState } from 'react'
 
 function Contact() {
+    const [text, setText] = useState('')
+
+    const [error, setError] = useState(false)
+    const [btn, setBtn] = useState(false)
+
+    const handleChange = (e) => {
+        e.preventDefault()
+        setText(e.target.value)
+    }
+
+    const handleCheck = (e) => {
+        setBtn(true)
+    }
+
+    const handleSubmit = (e) => {
+
+        e.preventDefault()
+        text === '' ? setError(true) : setError(false)
+
+    }
+
     return (
         <div>
 
             <div className='contact'>
                 <div className="text">
-                    <h1 style={{ textAlign: 'left', alignItems: 'flex-start' }}>Contact Me</h1>
-                    <p style={{ textAlign: 'left', alignItems: 'flex-start' }}>Hi there, contact me to ask me about anything you have in mind.</p>
+                    <h1> Contact Me</h1>
+                    <p> Hi there, contact me to ask me about anything you have in mind.</p>
 
                 </div>
                 <form>
@@ -21,8 +43,9 @@ function Contact() {
                             <input
                                 id='first_name'
                                 type="text"
-                                placeholder='Enter your first name'
                                 required
+                                placeholder='Enter your first name'
+
                             />
                         </div>
                         <br />
@@ -32,10 +55,11 @@ function Contact() {
 
                             <input
                                 type="text"
+                                required
                                 id='last_name'
                                 placeholder='Enter your last name'
                                 className='second'
-                                required
+
                             />
                         </div>
                     </div>
@@ -48,10 +72,11 @@ function Contact() {
 
                     <input
                         type="text"
+                        required
                         id='email'
                         className='email'
                         placeholder='youremail@email.com'
-                        required
+
                     />
 
                     <br />
@@ -66,17 +91,29 @@ function Contact() {
                         id="message"
                         cols="30"
                         rows="10"
-                        required>
+                        value={text}
+                        onChange={handleChange}
+                        className={error ? 'red' : ''}
+                    >
 
                     </textarea>
+                    {error && <p className='error'>Please enter a message</p>}
                     <br />
                     <div className="check">
-                        <input required className='checkbox' type="checkbox" name="" id="" />
+                        <input
+                            className='checkbox'
+                            type="checkbox" name="" id=""
+                            onClick={handleCheck}
+                        />
                         <label htmlFor="checkbox">You agree to providing your data to Tolulope Bright who may contact you.</label>
 
                     </div>
                     <br />
-                    <button id='btn__submit'>Send message</button>
+                    <button
+                        disabled={!btn}
+                        onClick={handleSubmit}
+                        id='btn__submit'>
+                        Send message</button>
                 </form>
             </div>
 
