@@ -9,7 +9,7 @@ import vector from './Image/taskimg (2).png'
 import vector2 from './Image/desktop_share.png'
 import profile from './Image/tolu.png'
 import {Link} from 'react-router-dom'
-import Footer from '../Footer'
+import Footer from './Footer'
 
 function Profile() {
     return (
@@ -52,14 +52,7 @@ function Profile() {
 
       {/* FOOTER */}
 
-      <footer>
-        <hr />
-        <div className='footer'>
-          <div className='zuri'> <img src={img2} alt='zuri logo' /></div>
-          <p>HNG Internship 9 Frontend Task</p>
-          <div className='ingressive'><img src={img3} alt='ingressive logo' /></div>
-        </div>
-      </footer>
+    <Footer />
     
         </div>
     )
