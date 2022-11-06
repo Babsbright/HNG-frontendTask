@@ -5,13 +5,13 @@ import github from '../Image/Icon.png'
 import vector from '../Image/taskimg (2).png'
 import vector2 from '../Image/desktop_share.png'
 import profile from '../Image/tolu.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Footer from './Footer'
 
 function Profile() {
-    return (
-        <div className='profile-body'>
-            {/* PROFILE */}
+  return (
+    <div className='profile-body'>
+      {/* PROFILE */}
 
       <img className='vector' src={vector} alt='mobile menu' />
       <img className='vector2' src={vector2} alt='desktop share' />
@@ -26,20 +26,20 @@ function Profile() {
       {/* BUTTONS */}
 
       <div className='btns'>
-        <button id='btn__zuri'><a href='https://training.zuri.team/'>Twitter Link</a></button>
-        <button id='books'><a href='https://books.zuri.team/'>Zuri Team</a></button>
-        <button id='books'><a href='http://books.zuri.team'>Zuri Books</a></button>
-        <button id='book__python'><a href='https://books.zuri.team/python-for-beginners?ref_id=<tolulopeBright>'>Python Books</a></button>
-        <button id='pitch'><a href='https://background.zuri.team'>Background check for Coders</a></button>
-        <button id='book__design'><a href='https://books.zuri.team/design-rules'>Design Books</a></button>
-     
-        <button id='contact'>
-        <Link className='link' to ='/contact'>
-       Contact Me
+        <button> <a id='btn__zuri' href='https://training.zuri.team/'>Twitter Link</a></button>
+        <button> <a id='books' href='https://books.zuri.team/'>Zuri Team</a></button>
+        <button> <a id='books' href='http://books.zuri.team'>Zuri Books</a></button>
+        <button> <a id='book__python' href='https://books.zuri.team/python-for-beginners?ref_id=<tolulopeBright>'>Python Books</a></button>
+        <button> <a id='pitch' href='https://background.zuri.team'>Background check for Coders</a></button>
+        <button> <a id='book__design' href='https://books.zuri.team/design-rules'>Design Books</a></button>
 
-       </Link>
+        <button>
+          <Link id='contact' className='link' to='/contact'>
+            Contact Me
+
+          </Link>
         </button>
-     
+
       </div>
 
 
@@ -53,10 +53,10 @@ function Profile() {
 
       {/* FOOTER */}
 
-    <Footer />
-    
-        </div>
-    )
+      <Footer />
+
+    </div>
+  )
 }
 
 export default Profile
