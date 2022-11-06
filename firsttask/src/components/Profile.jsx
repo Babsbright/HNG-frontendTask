@@ -5,7 +5,7 @@ import github from '../Image/Icon.png'
 import vector from '../Image/taskimg (2).png'
 import vector2 from '../Image/desktop_share.png'
 import profile from '../Image/tolu.png'
-
+import {Link} from 'react-router-dom'
 import Footer from './Footer'
 
 function Profile() {
@@ -34,10 +34,10 @@ function Profile() {
         <button id='book__design'><a href='https://books.zuri.team/design-rules'>Design Books</a></button>
      
         <button id='contact'>
-        <a className='link' href ='/contact'>
+        <Link className='link' to ='/contact'>
        Contact Me
 
-       </a>
+       </Link>
         </button>
      
       </div>
