@@ -55,10 +55,10 @@ function Contact() {
 
                             <input
                                 type="text"
-                                required
                                 id='last_name'
                                 placeholder='Enter your last name'
                                 className='second'
+                                required
 
                             />
                         </div>
